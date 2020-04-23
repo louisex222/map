@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    crossorigin="" />
+    <link rel="stylesheet" href="css/mapes.css">
+    
+</head>
+<body>
+    <a href="#" class="showSideBtn"><i class="fas fa-bars"></i></a>
+    <div id="sidebar"  class="sidebar">
+        <div>
+            <h2 class="sidebarSearch"><i class="fas fa-search"></i>搜尋</h2>
+            <div class="searchForm">
+                <fieldset class="selectBox">
+                    <legend>縣市</legend>
+                    <div>
+                        <select name="縣市" id="country">
+                            <option value="">請選擇縣市</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="selectBox">
+                    <legend>地區</legend>
+                    <div>
+                        <select name="地區" id="district">
+                            <option value="">請選擇地區</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        
+        <div>
+            <ul class="resultList">
+                <li class="resultList-defaultList">搜尋結果為空</li>
+               
+            </ul>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js" crossorigin=""></script>
+  <script src="js/mapes.js"></script>
+
+</body>
+</html>

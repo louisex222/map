@@ -1,0 +1,204 @@
+*{
+    /* border: 1px solid #000000; */
+    font-family: 微軟正黑體,'serif';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#sidebar{
+background-color: #ffffff;
+max-width: 375px;
+border-radius:  5px;
+margin-left: 50px;
+margin-top: 15px;
+position: absolute;
+padding: 10px;
+display: inline-block;
+box-shadow: 3px 3px 5px #777777;
+z-index: 1;
+box-sizing: border-box;
+
+}
+#sidebar.move{
+   display:none;
+}
+.showSideBtn{
+    position: absolute;
+    z-index: 30;
+    left: 300px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+   
+}
+.showSideBtn.move{
+    left: 7px;
+    top:80px;
+}
+.showSideBtn .fas{
+    color: #000000;
+    background-color: #fff;
+    font-size: 30px;
+}
+#sidebar .sidebarSearch{
+    margin-top: 0;
+    color: #FC4B65;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#sidebar .sidebarSearch .fas{
+    padding-right: 10px;
+}
+.selectBox{
+   border: 3px solid #A4D5F4;
+   border-radius: 20px;
+   margin-bottom: 10px;
+   float: left;
+   min-width: 100%;
+   box-sizing: border-box;
+}
+.selectBox legend{
+    font-size: 15px;
+    margin-left: 15px;
+    color:#14699F;
+    font-weight: 900;
+}
+
+.selectBox #country {
+    width: 100%;
+    font-size: 25px;
+    letter-spacing:.1em;
+    text-align-last:center;
+    font-size:18px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    border-radius:4px;
+    color:#14699F;
+    cursor: pointer;
+}
+.selectBox #country option{
+    font-size: 15px;
+  
+}
+.selectBox #district{
+    width: 100%;
+    font-size: 25px;
+    letter-spacing:.1em;
+    text-align-last:center;
+    font-size:18px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    border-radius:4px;
+    cursor: pointer;
+    color:#14699F;
+}
+.selectBox #district option{
+    font-size: 15px;
+}
+.resultList{
+    list-style: none;
+    overflow:auto;
+    height: 500px;
+    padding-left: 10px;
+    z-index: 10;
+    width: 350px;
+    box-sizing: border-box;
+}
+.resultList .resultList-defaultList{
+    text-align: center;
+    font-size: 18px;
+    color: #14699F;
+    font-weight: 900;
+}
+.resultList li{
+    margin: 10px 0;
+}
+.resultList-wrap{
+    border: 1px solid  #A4D5F4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.resultList-wrap .storeBox{
+    position: relative;
+}
+.resultList-wrap .storeBox .storename{
+    display: inline-block;
+    cursor:pointer;
+}
+.resultList-wrap .storeBox .storename:hover{
+    color: sandybrown;
+    transform:  scale(1.2);
+}
+.resultList-wrap .storeBox  a{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+.resultList-wrap .storeBox  a .fas{
+    font-size:  30px;
+    color: #A4D5F4;
+}
+.resultList-wrap .storeBox a .fas:hover{
+    transform:  scale(1.5);
+}
+.resultList-wrap h3{
+  margin: 0; 
+  font-size: 15px;
+  margin-bottom: 10px;
+  
+      
+}
+.resultList-wrap h3 .fas{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.resultList-wrap ul{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+.resultList  ul li{
+    margin: 0 10px;
+    border: 2px solid #A4D5F4;
+    border-radius: 10px;
+    height: 20px;
+    padding:  10px 10px;
+    color: #14699F;
+    font-size: 12px;
+    font-weight: 900;
+    
+}
+
+@media screen and (max-width:475px){
+    #sidebar{
+        margin: 0;
+       
+    }
+    .showSideBtn{
+        top: 0;
+    }
+}
