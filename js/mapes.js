@@ -221,6 +221,11 @@ function jumptoMarker(e){
 // 調整選單
 
 showSideBtn.onclick = function(){
-     sideBar.classList.toggle('move')
-     showSideBtn.classList.toggle('move')
+    if(sideBar.className.includes('move')){
+        sideBar.className = 'sidebar in'
+    }else{
+        sideBar.classList.add('move')
+        sideBar.classList.remove('in')
+    }
+     
 }

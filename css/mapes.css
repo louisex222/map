@@ -19,7 +19,7 @@ background-color: #ffffff;
 max-width: 375px;
 border-radius:  5px;
 margin-left: 50px;
-margin-top: 15px;
+margin-top: 50px;
 position: absolute;
 padding: 10px;
 display: inline-block;
@@ -29,16 +29,22 @@ box-sizing: border-box;
 
 }
 #sidebar.move{
-   display:none;
+    transform: translateX(-420px);
+    transition: ease-out 0.5s;
+}
+#sidebar.in{
+    transform: translateX(0px);
+    transition: ease-out 0.5s
 }
 .showSideBtn{
     position: absolute;
-    z-index: 30;
-    left: 300px;
+    z-index: 10;
+    right: -40px;
     top: 25px;
     width: 30px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 3px 3px 5px #777777;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -47,10 +53,7 @@ box-sizing: border-box;
     padding: 5px;
    
 }
-.showSideBtn.move{
-    left: 7px;
-    top:80px;
-}
+
 .showSideBtn .fas{
     color: #000000;
     background-color: #fff;
